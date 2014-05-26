@@ -18,5 +18,4 @@ build:
         name: push to packagecloud
         code: |
           sudo gem install package_cloud --no-ri --no-rdoc
-          DEB_FILE=$(find . -name "*.deb") && export $DEB_FILE
-          package_cloud push darron/openresty/ubuntu/trusty $DEB_FILE
+          DEB_FILE=$(find . -name '*.deb') package_cloud push darron/openresty/ubuntu/trusty $DEB_FILE
