@@ -6,7 +6,7 @@ build:
         name: prepare the required items.
         code: |
           sudo apt-get update
-          sudo apt-get install -y build-essential git && sudo gem install fpm-cookery --no-ri --no-rdoc
+          sudo apt-get install -y build-essential git libssl0.9.8-dev && sudo gem install fpm-cookery --no-ri --no-rdoc
     - script:
         name: get the source and build
         code: |
