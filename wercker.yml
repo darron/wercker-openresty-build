@@ -1,4 +1,4 @@
-box: darron/ubuntu14.04@1.0.1
+box: darron/ubuntu14.04@1.0.2
 no-response-timeout: 10
 build:
   steps:
@@ -6,7 +6,7 @@ build:
         name: prepare the required items.
         code: |
           sudo apt-get update
-          sudo apt-get install -y build-essential git libssl-dev && sudo gem install fpm-cookery --no-ri --no-rdoc
+          sudo apt-get install -y libssl-dev && sudo gem install fpm-cookery --no-ri --no-rdoc
     - script:
         name: get the source and build
         code: |
