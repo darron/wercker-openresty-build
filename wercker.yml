@@ -15,7 +15,7 @@ build:
           sudo fpm-cook install-deps
           sudo fpm-cook
 deploy:
-  despts:
+  steps:
     - script:
         name: push to packagecloud
         code: |
