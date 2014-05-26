@@ -12,4 +12,5 @@ build:
         code: |
           git clone https://github.com/darron/fpm-recipes.git
           cd fpm-recipes/openresty
+          sudo fpm-cook install-deps
           fpm-cook
