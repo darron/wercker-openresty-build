@@ -14,3 +14,8 @@ build:
           cd fpm-recipes/openresty
           sudo fpm-cook install-deps
           sudo fpm-cook
+    - script:
+        name: push to packagecloud
+        code: |
+          sudo gem install package_cloud --no-ri --no-rdoc
+          package_cloud push darron/openresty/ubuntu/trusty pkg/openresty*deb
